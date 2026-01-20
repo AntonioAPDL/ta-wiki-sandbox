@@ -1,5 +1,9 @@
 # Welcome to the TA Wiki Git Workshop
 
+<p align="center">
+  <img src="assets/images/stats_icon.png" alt="Statistics icon" width="120">
+</p>
+
 This is a safe practice sandbox for students preparing to maintain the TA Resources wiki at https://github.com/UCSC-Statistics/TA-resources/wiki. It is an introduction to Git for wiki contributions. In one hour, you will make a small docs change and open a pull request (PR) using Git (CLI) and VS Code.
 
 This repo is for practice only. Your PRs are reviewed here before you contribute to the real wiki.
