@@ -44,6 +44,10 @@ Key differences:
 - You push to your fork, not the original repo.
 - Your PR goes from your fork back to `AntonioAPDL/ta-wiki-sandbox`.
 
+<p align="center">
+  <img src="assets/images/fork-flow-diagram.png" alt="Fork workflow diagram" width="640">
+</p>
+
 ## Pre-work checklist
 - [ ] Git is installed (`git --version` works).
 - [ ] GitHub account is ready and you can log in.
