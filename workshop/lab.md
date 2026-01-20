@@ -11,10 +11,10 @@ Option A: Fix 1 typo AND fix 1 link.
 Option B: Improve 1 bullet list for clarity.
 
 ## Commands (copy-paste, in order)
-Replace `<repo-url>` and `<branch>` with your values.
+Replace `<branch>` with your value.
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/AntonioAPDL/ta-wiki-sandbox.git
 cd ta-wiki-sandbox
 git checkout -b <branch>
 code .

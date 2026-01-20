@@ -50,7 +50,7 @@ Pull request (review + merge)
 Branch = an isolated line of work. A PR is the reviewable bundle of that work.
 
 ## Standard workflow (one path only)
-1) `git clone <repo-url>` (then `cd ta-wiki-sandbox`)
+1) `git clone https://github.com/AntonioAPDL/ta-wiki-sandbox.git` (then `cd ta-wiki-sandbox`)
 2) `git checkout -b <branch>`
 3) Edit files in VS Code
 4) `git status`
