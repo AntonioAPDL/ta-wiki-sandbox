@@ -10,11 +10,16 @@ Make a small docs fix and submit a PR.
 Option A: Fix 1 typo AND fix 1 link.  
 Option B: Improve 1 bullet list for clarity.
 
-## Step 0: Fork the repo on GitHub
+## Step 0 (GitHub, browser): fork the repo
 Click "Fork" to create a copy under your account.
 
-## Commands (copy-paste, in order)
-Replace `<your-username>` and `<branch>` with your values.
+Why: you do not have write access to the original repo, so you push to your fork.
+
+## Step 1 (VS Code terminal, local): clone your fork and create a branch
+Branch naming standard: `your-username/<short-topic>`  
+Examples: `aguirredleonis/fix-typo`, `lee/link-fix`
+
+Commands (copy-paste, in order). Replace `<your-username>` and `<branch>` with your values.
 
 ```bash
 git clone https://github.com/<your-username>/ta-wiki-sandbox.git
@@ -23,6 +28,12 @@ git checkout -b <branch>
 code .
 ```
 
+## Step 2 (VS Code, editor): make your change
+- Open `docs/ta-essentials.md`.
+- Make one small, clean change (choose Option A or Option B).
+- Preview Markdown in VS Code (top right preview icon).
+
+## Step 3 (VS Code terminal, local): commit and push
 Make your edit in VS Code, then:
 
 ```bash
@@ -34,7 +45,7 @@ git push -u origin <branch>
 
 Note: this pushes your branch to your fork (your `origin`), not to the original repo.
 
-## Open the PR on GitHub
+## Step 4 (GitHub, browser): open the PR
 1) Open your fork on GitHub and click "Compare & pull request."
 2) Make sure the base repo is `AntonioAPDL/ta-wiki-sandbox` and the base branch is `main`.
 3) Fill out the PR template, preview Markdown, and submit.
