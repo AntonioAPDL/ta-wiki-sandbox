@@ -6,9 +6,21 @@ Make a small docs fix and submit a PR.
 ## File to edit
 `docs/ta-essentials.md`
 
-## Required change (choose one)
-Option A: Fix 1 typo AND fix 1 link.  
-Option B: Improve 1 bullet list for clarity.
+## Required change (choose ONE small edit)
+Pick one easy change so your PR stays small.
+
+Option A: Fix 1 typo (one word).  
+Option B: Fix 1 formatting issue (a small Markdown change).  
+Option C: Fix 1 link (correct an obvious typo in the URL).  
+Option D: Improve 1 bullet for clarity (rewrite one line).
+
+Examples (choose one):
+- Fix "reserced" -> "reserved".
+- Turn "Office hours flow" into a heading.
+- Fix ".../academic-integrty" -> ".../academic-integrity".
+- Rewrite "Make sure announcements are sent maybe."
+
+Do only one change in this file.
 
 ## Step 0 (GitHub, browser): fork the repo
 Click "Fork" to create a copy under your account.
