@@ -43,6 +43,27 @@ If the correct branch does not exist yet:
 git switch -c username/<short-topic>
 ```
 
+## Permission denied when pushing
+Symptoms: "permission to ... denied" or a 403 error when you run `git push`.
+
+Why: you are pushing to the original repo instead of your fork.
+
+```bash
+git remote -v
+```
+
+If `origin` points to `AntonioAPDL/ta-wiki-sandbox`, update it to your fork:
+
+```bash
+git remote set-url origin https://github.com/<your-username>/ta-wiki-sandbox.git
+```
+
+Then push again:
+
+```bash
+git push -u origin <branch>
+```
+
 ## Auth failed (token vs password)
 GitHub requires a token for HTTPS pushes.
 

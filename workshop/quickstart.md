@@ -110,11 +110,16 @@ When prompted by Git:
 
 If your terminal opens a browser login (Git Credential Manager), follow the prompts and approve access.
 
+## 6) GitHub check (fork access)
+- Log in to GitHub in a browser.
+- Open https://github.com/AntonioAPDL/ta-wiki-sandbox and confirm you can see the "Fork" button.
+
 ## Ready check
 - `git --version` works in the VS Code terminal.
 - Your Git name and email are set.
 - You can log in to GitHub in a browser.
 - You have a PAT ready for HTTPS pushes.
+- You can see the "Fork" button on the sandbox repo.
 
 ## If you get stuck, paste this
 Include this bundle when asking for help so we can diagnose quickly:

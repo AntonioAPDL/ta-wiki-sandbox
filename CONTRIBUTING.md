@@ -2,6 +2,11 @@
 
 This repo is a teaching sandbox. Keep changes small, focused, and easy to review.
 
+## Workflow (forks for public repos)
+- Fork the repo on GitHub.
+- Push your branch to your fork.
+- Open a PR from your fork to `AntonioAPDL/ta-wiki-sandbox`.
+
 ## Branch naming
 - Use `username/<short-topic>`.
 - Examples: `antonio/fix-typo`, `lee/link-fix`.

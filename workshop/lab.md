@@ -10,11 +10,14 @@ Make a small docs fix and submit a PR.
 Option A: Fix 1 typo AND fix 1 link.  
 Option B: Improve 1 bullet list for clarity.
 
+## Step 0: Fork the repo on GitHub
+Click "Fork" to create a copy under your account.
+
 ## Commands (copy-paste, in order)
-Replace `<branch>` with your value.
+Replace `<your-username>` and `<branch>` with your values.
 
 ```bash
-git clone https://github.com/AntonioAPDL/ta-wiki-sandbox.git
+git clone https://github.com/<your-username>/ta-wiki-sandbox.git
 cd ta-wiki-sandbox
 git checkout -b <branch>
 code .
@@ -29,9 +32,11 @@ git commit -m "docs: fix typos and link"
 git push -u origin <branch>
 ```
 
+Note: this pushes your branch to your fork (your `origin`), not to the original repo.
+
 ## Open the PR on GitHub
-1) Click "Compare & pull request" for your branch.
-2) Fill out the PR template.
-3) Preview Markdown one last time and submit.
+1) Open your fork on GitHub and click "Compare & pull request."
+2) Make sure the base repo is `AntonioAPDL/ta-wiki-sandbox` and the base branch is `main`.
+3) Fill out the PR template, preview Markdown, and submit.
 
 Optional: add a label (typo/link, structure, template, resource, graphics).
