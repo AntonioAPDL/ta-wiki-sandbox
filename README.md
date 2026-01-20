@@ -1,6 +1,11 @@
-# TA Wiki Git Workshop Sandbox
+# Welcome to the TA Wiki Git Workshop
 
-This repository is a safe practice sandbox for contributing to the TA Wiki. In one hour, you will make a small docs change and open a pull request (PR) using Git (CLI) and VS Code.
+This is a safe practice sandbox for students preparing to maintain the TA Resources wiki at https://github.com/UCSC-Statistics/TA-resources/wiki. It is an introduction to Git for wiki contributions. In one hour, you will make a small docs change and open a pull request (PR) using Git (CLI) and VS Code.
+
+This repo is for practice only. Your PRs are reviewed here before you contribute to the real wiki.
+
+## Start here (before the workshop)
+- Complete `workshop/quickstart.md` so Git, VS Code, and authentication are ready.
 
 ## What you will do in 60 minutes
 - [ ] Clone the repo to your laptop.
@@ -16,8 +21,11 @@ End state: one PR open on GitHub and ready for review.
 - `workshop/quickstart.md`
 - `workshop/lab.md`
 - `workshop/troubleshooting.md`
-- Facilitator: `workshop/run-of-show.md`
-- Facilitator: `workshop/participant-requirements.md`
+
+## Workshop flow (what we will use)
+- Start in `workshop/lab.md` for the exact commands.
+- Make your edits in `docs/ta-essentials.md`.
+- Use `workshop/troubleshooting.md` if you get stuck.
 
 ## Pre-work checklist
 - [ ] Git is installed (`git --version` works).
