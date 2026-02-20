@@ -11,10 +11,12 @@
 ## 15-25 min: live CLI demo
 - Walk the full workflow once (clone -> branch -> edit -> add -> commit -> push).
 - Narrate why each step exists (reviewability and history).
+- Show one quick pre-push check: `git status` must show a real file change before commit.
 
 ## 25-50 min: participants complete the lab
 - Everyone follows `workshop/lab.md`.
 - Circulate and help unblock authentication issues early.
+- Triage top blockers first: missing `gh`, `xdg-open` browser launch errors, wrong `origin`, and "No commits between ..." PR errors.
 
 ## 50-60 min: patterns of failure + handoff
 - Review common errors from `workshop/troubleshooting.md`.
