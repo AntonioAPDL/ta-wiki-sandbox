@@ -1,5 +1,52 @@
 # Troubleshooting
 
+## `gh` command not found
+Symptoms: `Command 'gh' not found`.
+
+Install GitHub CLI:
+
+```bash
+sudo apt install gh
+```
+
+Then verify:
+
+```bash
+gh --version
+```
+
+## `gh auth login` cannot open browser (`xdg-open` errors)
+Symptoms: errors like `xdg-open: no method available for opening ...`.
+
+Why: common in WSL/headless terminals with no GUI browser configured.
+
+Do this:
+1) Copy the one-time code printed by `gh`.
+2) Open `https://github.com/login/device` manually in any browser.
+3) Paste the code and complete sign-in.
+
+Then verify:
+
+```bash
+gh auth status
+gh api user -q .login
+```
+
+## `gh auth logout` flag error
+Symptoms: `flag needs an argument: 'u' in -u`.
+
+Use:
+
+```bash
+gh auth logout -h github.com
+```
+
+Or specify username:
+
+```bash
+gh auth logout -h github.com -u <your-username>
+```
+
 ## Forgot `git add`
 Symptoms: `git commit` says "nothing to commit" or your file is still listed as "not staged."
 
@@ -42,6 +89,25 @@ If the correct branch does not exist yet:
 ```bash
 git switch -c username/<short-topic>
 ```
+
+## PR fails with `No commits between ...`
+Symptoms: `gh pr create` returns `No commits between ...`.
+
+Why: your branch has no new commit compared with `main`.
+
+Check:
+
+```bash
+git status
+git log --oneline -n 3
+```
+
+Fix:
+1) Edit and save `docs/ta-essentials.md`.
+2) `git add docs/ta-essentials.md`
+3) `git commit -m "docs: ..."`
+4) `git push`
+5) Create PR again.
 
 ## Permission denied when pushing
 Symptoms: "permission to ... denied" or a 403 error when you run `git push`.

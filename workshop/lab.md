@@ -22,44 +22,83 @@ Examples (choose one):
 
 Do only one change in this file.
 
-## Step 0 (GitHub, browser): fork the repo
-Click "Fork" to create a copy under your account.
+## Step 0: choose one path
+Path A (recommended): fork in GitHub UI, then clone with `git`.
 
-Why: you do not have write access to the original repo, so you push to your fork.
+Path B (terminal-first): use GitHub CLI:
 
-## Step 1 (VS Code terminal, local): clone your fork and create a branch
-Branch naming standard: `your-username/<short-topic>`  
-Examples: `aguirredleonis/fix-typo`, `lee/link-fix`
+```bash
+gh repo fork AntonioAPDL/ta-wiki-sandbox --clone
+cd ta-wiki-sandbox
+```
 
-Commands (copy-paste, in order). Replace `<your-username>` and `<branch>` with your values.
+If you use Path A:
+1) Open `https://github.com/AntonioAPDL/ta-wiki-sandbox`.
+2) Click "Fork".
+3) Clone your fork:
 
 ```bash
 git clone https://github.com/<your-username>/ta-wiki-sandbox.git
 cd ta-wiki-sandbox
-git checkout -b <branch>
+```
+
+## Step 1 (terminal): create your branch
+Branch naming standard: `your-username/<short-topic>`  
+Examples: `aguirrepdeleon-beep/fix-typo`, `lee/link-fix`
+
+```bash
+git switch -c <your-username>/<short-topic>
+```
+
+## Step 2 (VS Code editor): make one small change
+```bash
 code .
 ```
 
-## Step 2 (VS Code, editor): make your change
 - Open `docs/ta-essentials.md`.
-- Make one small, clean change (choose Option A or Option B).
-- Preview Markdown in VS Code (top right preview icon).
+- Make exactly one small change.
+- Preview Markdown in VS Code.
 
-## Step 3 (VS Code terminal, local): commit and push
-Make your edit in VS Code, then:
+## Step 3 (terminal): verify you really changed a file
+Run this before committing:
 
 ```bash
 git status
-git add docs/ta-essentials.md
-git commit -m "docs: fix typos and link"
-git push -u origin <branch>
+git diff -- docs/ta-essentials.md
 ```
 
-Note: this pushes your branch to your fork (your `origin`), not to the original repo.
+If you see `nothing to commit, working tree clean`, you did not save any change yet. Go back to Step 2.
 
-## Step 4 (GitHub, browser): open the PR
-1) Open your fork on GitHub and click "Compare & pull request."
-2) Make sure the base repo is `AntonioAPDL/ta-wiki-sandbox` and the base branch is `main`.
-3) Fill out the PR template, preview Markdown, and submit.
+## Step 4 (terminal): commit and push
+```bash
+git add docs/ta-essentials.md
+git commit -m "docs: <short description>"
+git push -u origin <your-username>/<short-topic>
+```
 
-Optional: add a label (typo/link, structure, template, resource, graphics).
+Note: `origin` must be your fork, not `AntonioAPDL/ta-wiki-sandbox`.
+Check:
+
+```bash
+git remote -v
+```
+
+## Step 5: open the PR
+Browser path:
+1) Open your fork and click "Compare & pull request".
+2) Confirm base repo is `AntonioAPDL/ta-wiki-sandbox` and base branch is `main`.
+3) Fill the PR template and submit.
+
+Terminal path:
+
+```bash
+gh pr create \
+  --repo AntonioAPDL/ta-wiki-sandbox \
+  --base main \
+  --head <your-username>:<your-username>/<short-topic> \
+  --title "docs: <short description>"
+```
+
+If `gh pr create` says `No commits between ...`, your branch has no new commit. Return to Step 2 and Step 4.
+
+Optional: add a label (`typo/link`, `structure`, `template`, `resource`, `graphics`).
