@@ -9,6 +9,9 @@ Pick one workflow and stick to it:
 
 Both paths work on Windows, macOS, and Linux.
 
+If you want one copy-paste terminal script from login to PR, use:
+- `workshop/student-copy-paste-script.md`
+
 ## 1) Install VS Code
 Windows:
 - Download and install: https://code.visualstudio.com/

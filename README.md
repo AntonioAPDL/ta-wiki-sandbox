@@ -26,6 +26,7 @@ End state: one PR open on GitHub and ready for review.
 - `workshop/quickstart.md`
 - `workshop/lab.md`
 - `workshop/troubleshooting.md`
+- `workshop/student-copy-paste-script.md` (terminal one-shot path)
 
 ## Workshop flow (what we will use)
 - Fork the repo on GitHub.

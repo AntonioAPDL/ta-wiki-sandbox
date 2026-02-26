@@ -3,6 +3,9 @@
 ## Goal
 Make a small docs fix and submit a PR.
 
+If you prefer one command-driven path from login to PR, see:
+- `workshop/student-copy-paste-script.md`
+
 ## File to edit
 `docs/ta-essentials.md`
 
@@ -28,7 +31,8 @@ Path A (recommended): fork in GitHub UI, then clone with `git`.
 Path B (terminal-first): use GitHub CLI:
 
 ```bash
-gh repo fork AntonioAPDL/ta-wiki-sandbox --clone
+gh repo view <your-username>/ta-wiki-sandbox >/dev/null 2>&1 || gh repo fork AntonioAPDL/ta-wiki-sandbox --remote=false
+git clone https://github.com/<your-username>/ta-wiki-sandbox.git
 cd ta-wiki-sandbox
 ```
 
@@ -42,6 +46,9 @@ git clone https://github.com/<your-username>/ta-wiki-sandbox.git
 cd ta-wiki-sandbox
 ```
 
+Why this step matters:
+- You need your own fork so you can push changes without write access to the upstream repo.
+
 ## Step 1 (terminal): create your branch
 Branch naming standard: `your-username/<short-topic>`  
 Examples: `aguirrepdeleon-beep/fix-typo`, `lee/link-fix`
@@ -49,6 +56,9 @@ Examples: `aguirrepdeleon-beep/fix-typo`, `lee/link-fix`
 ```bash
 git switch -c <your-username>/<short-topic>
 ```
+
+Why this step matters:
+- A branch isolates your work and keeps your PR focused.
 
 ## Step 2 (VS Code editor): make one small change
 ```bash
@@ -59,6 +69,9 @@ code .
 - Make exactly one small change.
 - Preview Markdown in VS Code.
 
+Why this step matters:
+- Small single-purpose edits are easier to review and less likely to conflict.
+
 ## Step 3 (terminal): verify you really changed a file
 Run this before committing:
 
@@ -68,6 +81,9 @@ git diff -- docs/ta-essentials.md
 ```
 
 If you see `nothing to commit, working tree clean`, you did not save any change yet. Go back to Step 2.
+
+Why this step matters:
+- It prevents empty commits and the "No commits between ..." PR error.
 
 ## Step 4 (terminal): commit and push
 ```bash
@@ -82,6 +98,11 @@ Check:
 ```bash
 git remote -v
 ```
+
+Why this step matters:
+- `git add` selects what goes into the commit.
+- `git commit` creates a reviewable snapshot.
+- `git push` publishes your branch so GitHub can open a PR.
 
 ## Step 5: open the PR
 Browser path:
@@ -102,3 +123,6 @@ gh pr create \
 If `gh pr create` says `No commits between ...`, your branch has no new commit. Return to Step 2 and Step 4.
 
 Optional: add a label (`typo/link`, `structure`, `template`, `resource`, `graphics`).
+
+Why this step matters:
+- The PR is where review happens before merge into `main`.
