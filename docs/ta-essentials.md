@@ -5,7 +5,7 @@ This page covers the core expectations for TAs in the course. It is reserced for
 ## Policies and boundaries
 - Refer students to the Academic Integrity policy: [Academic Integrity Policy](https://example.edu/policies/academic-integrty)
 - Never grade your own submissions or those of close friends.
-- Student data is confidntial; do not share grades outside the team.
+- Student data is confidential; do not share grades outside the team.
 - Late work is handled by the instrutor; do not promise exceptions.
 - Office hours are for enroled students unless the instructor approves.
 - Do not share solution keys in public chanels.
