@@ -40,3 +40,5 @@ Office hours flow
 - When in doubt, ask the lead TA before adjusting a score.
 - Rubric template: [Rubric Template](https://example.edu/courses/cs101/rubric-templat)
 - Course syllabus: [Syllabus](https://example.com/)
+
+aubree's test. i really hope this works. 
