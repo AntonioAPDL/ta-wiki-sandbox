@@ -25,4 +25,4 @@ Active learning ideas: [Active learning resources](https://example.edu/teaching/
 Post-section notes
 - What concept took the longest?
 - Which question produced the most confusion?
-- One idea to improve next minuite.
+- One idea to improve next section.
