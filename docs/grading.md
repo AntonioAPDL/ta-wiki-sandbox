@@ -4,7 +4,7 @@ This guide helps TAs grade consistently and fairly.
 
 ## Rubric tips
 - Read the rubric first and keep it open while grading.
-- Grade one question across all submissions to stay consitent.
+- Grade one question across all submissions to stay consistent.
 - Use short, actionable comments.
 - If the prompt is unclear, ask the lead TA before guessing.
 
@@ -13,7 +13,7 @@ This guide helps TAs grade consistently and fairly.
 - Review the usual weird cases.
 
 ## Regrade policy template
-Students may request a regrade within 7 days of release. This policy applies to each assigment.
+Students may request a regrade within 7 days of release. This policy applies to each assignment.
 
 Requests must be submitted via the regrade form: [Regrade Form](https://example.edu/forms/regrade-requst)
 
